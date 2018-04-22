@@ -80,4 +80,5 @@ else
   finished
 fi
 
+cd -
 cp src/static/* $BUILD_DIR/static
