@@ -41,7 +41,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-env | sort
+ls $HOME
 
 if [ -f $BUILD_DIR/.crystal-version ]; then
   CRYSTAL_VERSION=`cat $BUILD_DIR/.crystal-version | tr -d '\012'`
@@ -81,4 +81,4 @@ else
   finished
 fi
 
-cp $GIT_DIR/src/static/* $BUILD_DIR/static
+cp $HOME/src/static/* $BUILD_DIR/static
