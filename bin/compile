@@ -44,8 +44,6 @@ ENV_DIR=$3
 echo "---"
 echo "build:"
 ls $BUILD_DIR
-echo "cache:"
-ls $CACHE_DIR
 echo "env:
 ls $ENV_DIR
 echo "---
