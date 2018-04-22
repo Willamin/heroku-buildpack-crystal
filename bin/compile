@@ -79,3 +79,5 @@ else
     crystal build src/${shard_name}.cr --release $NO_DEBUG_IF_AVAILABLE -o app
   finished
 fi
+
+cp src/static/* $BUILD_DIR/static
