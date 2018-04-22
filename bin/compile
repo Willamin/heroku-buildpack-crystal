@@ -41,6 +41,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
+env | sort
+
 if [ -f $BUILD_DIR/.crystal-version ]; then
   CRYSTAL_VERSION=`cat $BUILD_DIR/.crystal-version | tr -d '\012'`
   CRYSTAL_VERSION_REASON='due to .crystal-version file'
