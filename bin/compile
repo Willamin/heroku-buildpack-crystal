@@ -51,7 +51,6 @@ fi
 
 CRYSTAL_URL=`${CURL} https://api.github.com/repos/crystal-lang/crystal/releases/tags/${CRYSTAL_VERSION} | grep 'https://github.com/crystal-lang/crystal/releases/download/.*-linux-x86_64.tar.gz' | sed 's/.*: "\(.*\)"/\1/'`
 CRYSTAL_DIR=/tmp/crystal
-unset GIT_DIR
 
 # Install Crystal
 mkdir -p $CRYSTAL_DIR
@@ -80,5 +79,4 @@ else
   finished
 fi
 
-cd -
-cp src/static/* $BUILD_DIR/static
+cp $GIT_DIR/src/static/* $BUILD_DIR/static
