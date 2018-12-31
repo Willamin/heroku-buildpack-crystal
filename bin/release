@@ -4,5 +4,5 @@ cat << EOF
 ---
 addons:
 default_process_types:
-  web: ./bin/app --port \$PORT
+  web: ./bin/heroku_crystal_app --port \$PORT
 EOF
