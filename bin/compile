@@ -74,5 +74,5 @@ start "Compiling ${shard_name} (auto-detected from shard.yml)"
 finished
 
 start "Renaming binary from ${shard_heroku_app} to heroku_crystal_app"
-  mv $shard_heroku_app heroku_crystal_app
+  mv bin/$shard_heroku_app bin/heroku_crystal_app
 finished
