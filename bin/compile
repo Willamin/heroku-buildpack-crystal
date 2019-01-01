@@ -70,7 +70,7 @@ NO_DEBUG_IF_AVAILABLE=`crystal build --help | grep -q -- --no-debug && echo -n -
 
 eval $(parse_yaml shard.yml "shard_")
 start "Compiling ${shard_name} (auto-detected from shard.yml)"
-  shards build --release $NO_DEBUG_IF_AVAILABLE
+  shards build --stats --release $NO_DEBUG_IF_AVAILABLE
 finished
 
 start "Renaming binary from ${shard_heroku_app} to heroku_crystal_app"
